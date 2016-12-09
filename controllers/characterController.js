@@ -3,7 +3,7 @@ this.myApp.controller('characterController',['$scope','$location','$log','$http'
 function($scope, $location, $log, $http, $route){   
 
 // Retrive all the arrays in char_details Json to an array called response   
-   $http.get("/json/char_details.json")
+   $http.get("json/char_details.json")
         .then(function (response){       
       $scope.details=response.data;  // all data is pushed to a scope array details
 

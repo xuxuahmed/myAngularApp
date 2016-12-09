@@ -1,0 +1,47 @@
+[
+    {
+        "id":"1",
+        "name": "Frozen (2013)",
+        "Description": "When the newly crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister, Anna, teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition."
+    },
+
+    {
+        "id":"2",
+        "name":"Finding Nemo (2003)",
+        "Description": "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home."
+    }
+    ,
+    {
+        "id":"3",
+        "name": "Rio (2011)",
+        "location": "pics/rio_long.jpg",
+        "Description": "It's a jungle out there for Blu, Jewel and their three kids after they're hurtled from Rio de Janeiro to the wilds of the Amazon. As Blu tries to fit in, he goes beak-to-beak with the vengeful Nigel, and meets his father-in-law."
+    }
+    ,
+     {
+        "id": "4",
+        "name": "Lion King (1994)",
+        "Description": "Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble."
+    },
+     {
+        "id":"5",
+        "name":"Ice Age (2002)",
+        "Description": "Set during the Ice Age, a sabertooth tiger, a sloth, and a wooly mammoth find a lost human infant, and they try to return him to his tribe."
+    }
+    ,
+     {
+        "id": "6",
+        "name":"Tarzan (1999)",
+        "Description": "A man raised by gorillas must decide where he really belongs when he discovers he is a human."
+    },
+     {
+        "id": "7",
+        "name":"Kung Fu Panda (2008)",
+        "Description": "The Dragon Warrior has to clash against the savage Tai Lung as China's fate hangs in the balance: However, the Dragon Warrior mantle is supposedly mistaken to be bestowed upon an obese panda who is a tyro in martial arts."
+    },
+    {
+        "id": "8",
+        "name": "Wreck-It Ralph (2012)",
+         "Description": "A video game villain wants to be a hero and sets out to fulfill his dream, but his quest brings havoc to the whole arcade where he lives."
+    }
+]

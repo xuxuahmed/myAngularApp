@@ -1,0 +1,20 @@
+<!--This page is home and cartoon page-->
+
+<div class = "jumbotron"></div> <!--Container to hold advertisement-->
+
+<h2> Featured Cartoons </h2>
+
+<div ng-repeat="pic in homePics"> <!--pic is assigned wtih values of homePics-->
+    <div ng-class="row">
+        <div class="col-lg-3 col-md-2 col-sm-2 col-xs-4" >
+            <div class="thumbnail" >
+                <!--When image is clicked get teh id of it-->
+                <img ng-src="{{pic.path}}" ng-click="myMovie(pic.id)"/>             
+                <div class="caption">
+                    <!--get the name of the pic-->
+                    <a ng-click="myMovie(pic.id)">{{pic.name}}</a>  
+                </div> <!-- End of class captions-->         
+            </div> <!--End of class thumbnails-->
+        </div> <!-- End of class columns-->
+    </div> <!--end fo ng-class row -->
+</div> <!--End of ng_rpeate div-->

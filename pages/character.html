@@ -1,0 +1,70 @@
+<!--Character page to show characters and dashboard with CRUD-->
+<h2> Cartoon Characters </h2> 
+<!--Show the picture as a header-->
+<div>
+    <img src ="pics/disney_banner.jpg" alt ="rio" class="img-responsive">
+</div> 
+
+
+<div class= "form-group" >
+<!--Show the panel my favourite cartoon characters-->
+    <div class="panel panel-primary">        
+        <div class="panel-heading">
+            <h3 class="panel-title">My Favourite Cartoon Characters</h3>
+        </div>
+
+        <div class="panel-body">
+<!-- Get values from charArray to charName-->     
+            <li ng-repeat="(key,charName) in charArray"> 
+
+                {{charName}} <!--Dispaly all the characters name-->
+
+<!--Button to delete Characters-->    
+                <a ng-click="deleteRecord(key)"><span class="label label-danger">x</span></a>
+
+<!--Button to Edit Characters--> 
+                <a ng-click="editRecord(key,charName)"><span class="label label-danger">edit</span></a>
+                <br><br>
+            </li>
+        </div>
+    </div><br>
+
+
+<!--Dashobard Panel for CRUD --> 
+    <div class="panel panel-info" >
+            <div class="panel-heading">
+                <h3 class="panel-title">Dashboard</h3>
+            </div>
+        <div class="well">
+            <!--Create button label-->
+            <label class="control-label" for="focusedInput">Edit Character</label><br>
+
+             <!--Create button to save edited character names-->
+            <input  type ="text" id="editName" ng-model="current" placeholder="Enter character name">
+            <a  class="btn btn-primary btn-sm" ng-click="saveRecord(id,current)">Save</a> <br><br>
+           
+             <!--Create button to add new characters-->               
+            <label class="control-label" for="focusedInput">Add New Character</label><br>
+            <input type="text" ng-model="name" size="20" placeholder="Enter name">
+            <a  class="btn btn-primary btn-sm" ng-click="addChar(name)">Add</a><br><br>
+            
+             <!--Create Search Label-->
+            <label class="control-label" for="focusedInput">Search</label><br>
+
+            <!--Create Search Text Area-->
+            <input type="text" ng-model="searchText" size="20" placeholder="Enter name">
+                
+            <!--Filter and Search Characters name-->    
+            <div class= "form-group" ng-repeat="characters in charArray | filter:searchText">
+               <br>
+               <div ng-show="searchText.length>1">
+                   <div class="alert alert-dismissible alert-info">
+                    
+                        <strong> {{characters}} Exists!!! </strong> </div>                  
+                </div> <!--End of ng-show-->
+
+            </div> <!--End of ng repeat search-->
+        </div> <!--End of Well-->
+    </div><!--End of Panel-->
+</div><!--form group-->
+
